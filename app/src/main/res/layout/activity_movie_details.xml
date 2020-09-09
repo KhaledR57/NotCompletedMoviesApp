@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -27,13 +26,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="270dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/batman" />
+                    android:src="@drawable/batman"
+                    android:contentDescription="" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:layout_alignParentTop="true"
-                    android:background="@drawable/darker_blue_gradient_bg" />
+                    android:background="@drawable/darker_blue_gradient_bg"
+                    android:contentDescription="" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -49,7 +50,8 @@
                         android:layout_margin="15dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/batman"
-                        android:transitionName="HomeToDetails" />
+                        android:transitionName="HomeToDetails"
+                        android:contentDescription="" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -99,30 +101,30 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Rating:"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp" />
 
             <RatingBar
                 android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:isIndicator="true"
                 android:numStars="5"
-                style="?android:attr/ratingBarStyleSmall"
                 android:stepSize="0.1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Plot:"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp" />
@@ -130,9 +132,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="@string/lorem"
                 android:textColor="#CCFFFFFF"
                 android:textSize="15sp" />
@@ -148,8 +150,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
                 android:text="Christopher Nolan"
                 android:textColor="#CCFFFFFF"
                 android:textSize="15sp" />
@@ -165,10 +167,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="Christopher Nolan ,Christopher Nolan ,Christopher Nolan"
+                android:text="@string/chri"
                 android:textColor="#CCFFFFFF"
                 android:textSize="15sp" />
         </LinearLayout>
